@@ -3,50 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Full-Stack Fetch Sandbox</title>
-  <link rel="stylesheet" href="css/error-display.css">  
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 0 20px;
-      text-align: center;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    button:hover {
-      background-color: #f0f0f0;
-    }
-    /* output */
-    #result {
-      margin-top: 30px;
-      font-size: 1.25rem;
-      font-weight: 500;
-      padding: 15px;
-      border-radius: 4px;
-    }
 
-  </style>
+  <title>Chaotic Internet Quotes Machine</title>
+
+  <link rel="stylesheet" href="css/error-display.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Shadows+Into+Light&family=Tulpen+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <h1>Full-Stack Fetch Sandbox</h1>
-  <button id="fetchData">Fetch Data from Server</button>
-  
-  <div id="result">Click the button to ping the server...</div>
-  
-  <div id="error-display"></div>
+  <main class="page-wrapper">
+
+    <p class="speech-bubble">It's not just a quote, it's a RANDOM quote!</p>
+
+    <h1>
+      <span class="title-chaotic">IT 120 Quotes Machine</span>
+      <span class="title-rest">By Tee Hyatt</span>
+      <span class="title-rest">Please give me extra credit haha jk unless?</span>
+    </h1>
+
+    <div class="emoji-row">
+      ⭐ 💖 👾 🌈 ✨ 💿 🦄
+    </div>
+
+    <button id="fetchData">Get Random Quote</button>
+
+    <section id="result">Loading quote...</section>
+
+    <p class="timer-text">~ new quote every 5 seconds ~</p>
+
+    <div id="error-display"></div>
+
+    <img
+      class="sticker sticker-top-left"
+      src="https://media3.giphy.com/media/v1.Y2lkPTZjMDliOTUydDg5dDgyeGs0ejEzNW0xMDEzazRhbGtneW8zOGVnNjJic25uc2J2aSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/1jgLDGD1Bn27e/source.gif"
+      alt="top left decoration"
+    >
+
+    <!-- Top right: should be something like a tamagotchi, pixel heart, or cute retro icon -->
+    <img
+      class="sticker sticker-top-right"
+      src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyOWdsNXoxY3pqMWNvY2w4dW16Mml1cnoyY2VjY250cnEzOGY1NGRqOCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/NyMaiJVuPmPKcYbbKd/200w.gif"
+      alt="Placeholder sticker for top right decoration"
+    >
+
+
+  </main>
 
   <script src="js/script.js"></script>
 </body>
